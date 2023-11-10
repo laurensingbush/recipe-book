@@ -1,33 +1,53 @@
 {
-  "name": "recipe-book",
-  "private": true,
-  "sideEffects": false,
-  "type": "module",
-  "scripts": {
-    "build": "remix build",
-    "dev": "remix dev --manual",
-    "start": "remix-serve ./build/index.js",
-    "typecheck": "tsc"
-  },
-  "dependencies": {
-    "@remix-run/css-bundle": "^2.2.0",
-    "@remix-run/node": "^2.2.0",
-    "@remix-run/react": "^2.2.0",
-    "@remix-run/serve": "^2.2.0",
-    "@vercel/remix": "^2.2.0",
-    "isbot": "^3.6.8",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "devDependencies": {
-    "@remix-run/dev": "^2.2.0",
-    "@remix-run/eslint-config": "^2.2.0",
-    "@types/react": "^18.2.20",
-    "@types/react-dom": "^18.2.7",
-    "eslint": "^8.38.0",
-    "typescript": "^5.1.6"
-  },
-  "engines": {
-    "node": ">=18.0.0"
-  }
+	"name": "recipe-book",
+	"private": true,
+	"sideEffects": false,
+	"type": "module",
+	"scripts": {
+		"build": "remix build",
+		"dev": "remix dev --manual",
+		"format": "prettier --write .",
+		"lint": "eslint --cache --cache-location ./node_modules/.cache/eslint .",
+		"start": "remix-serve ./build/index.js",
+		"typecheck": "tsc",
+		"prepare": "husky install"
+	},
+	"eslintIgnore": [
+		"/node_modules",
+		"/build",
+		"/public/build"
+	],
+	"dependencies": {
+		"@remix-run/node": "^2.2.0",
+		"@remix-run/react": "^2.2.0",
+		"@remix-run/serve": "^2.2.0",
+		"@vercel/remix": "^2.2.0",
+		"isbot": "^3.6.8",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	},
+	"devDependencies": {
+		"@remix-run/dev": "^2.2.0",
+		"@remix-run/eslint-config": "^2.2.0",
+		"@testing-library/jest-dom": "^6.1.4",
+		"@testing-library/react": "^14.1.0",
+		"@testing-library/user-event": "^14.5.1",
+		"@types/jest": "^29.5.8",
+		"@types/node": "^20.9.0",
+		"@types/react": "^18.2.20",
+		"@types/react-dom": "^18.2.7",
+		"eslint": "^8.38.0",
+		"eslint-config-prettier": "^9.0.0",
+		"husky": "^8.0.3",
+		"jest": "^29.7.0",
+		"jest-environment-jsdom": "^29.7.0",
+		"lint-staged": "^15.0.2",
+		"prettier": "3.0.3",
+		"prettier-plugin-tailwindcss": "^0.5.7",
+		"tailwindcss": "^3.3.5",
+		"typescript": "^5.1.6"
+	},
+	"engines": {
+		"node": ">=18.0.0"
+	}
 }
