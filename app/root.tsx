@@ -1,12 +1,12 @@
-import type { LinksFunction, MetaFunction } from '@remix-run/node'
 import {
+	type LinksFunction,
+	MetaFunction,
 	Links,
-	LiveReload,
 	Meta,
 	Outlet,
 	Scripts,
 	ScrollRestoration,
-} from '@remix-run/react'
+} from 'react-router'
 import styles from './tailwind.css'
 
 export const links: LinksFunction = () => {
@@ -34,7 +34,6 @@ export default function App() {
 				<Outlet />
 				<ScrollRestoration />
 				<Scripts />
-				<LiveReload />
 			</body>
 		</html>
 	)

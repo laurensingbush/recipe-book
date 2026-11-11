@@ -15,7 +15,7 @@ module.exports = {
 	},
 
 	// Base config
-	extends: ['@remix-run/eslint-config', 'prettier'],
+	extends: ['prettier'],
 	settings: {
 		jest: {
 			// we're using vitest which has a very similar API to jest

@@ -1,6 +1,10 @@
 node_modules
 
+.DS_Store
 /.cache
 /build
 /public/build
 .env
+
+# React Router
+/.react-router/
