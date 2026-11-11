@@ -8,3 +8,6 @@ node_modules
 
 # React Router
 /.react-router/
+
+# Vitest reports and artifacts
+.vitest/
