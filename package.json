@@ -10,7 +10,9 @@
 		"lint": "eslint --cache --cache-location ./node_modules/.cache/eslint .",
 		"start": "react-router-serve ./build/server/index.js",
 		"typecheck": "react-router typegen && tsc",
-		"test": "vitest",
+		"test": "vitest run",
+		"test:watch": "vitest",
+		"test:coverage": "vitest run --coverage",
 		"prepare": "husky install"
 	},
 	"eslintIgnore": [
@@ -19,15 +21,17 @@
 		"/public/build"
 	],
 	"dependencies": {
-		"@react-router/node": "^7.0.0",
-		"@react-router/serve": "^7.0.0",
+		"@react-router/node": "^8.5.1",
+		"@react-router/serve": "^8.5.1",
 		"isbot": "^3.6.8",
 		"react": "19.3.1",
 		"react-dom": "19.3.1",
-		"react-router": "^7.0.0"
+		"react-router": "^8.5.1"
 	},
 	"devDependencies": {
-		"@react-router/dev": "^7.0.0",
+		"@eslint-react/eslint-plugin": "^5.30.2",
+		"@eslint/js": "^10.0.1",
+		"@react-router/dev": "^8.5.1",
 		"@tailwindcss/vite": "^4.3.5",
 		"@testing-library/dom": "^10.4.2",
 		"@testing-library/react": "^16.3.3",
@@ -35,16 +39,20 @@
 		"@types/node": "^26.6.6",
 		"@types/react": "^19.3.0",
 		"@types/react-dom": "^19.3.0",
-		"eslint": "^8.38.0",
-		"eslint-config-prettier": "^9.0.0",
+		"eslint": "^10.14.0",
+		"eslint-config-prettier": "^10.1.8",
+		"eslint-plugin-react-hooks": "^7.1.1",
+		"eslint-plugin-react-refresh": "^0.5.7",
+		"globals": "^17.14.0",
 		"husky": "^8.0.3",
 		"lint-staged": "^15.0.2",
 		"prettier": "3.0.3",
 		"prettier-plugin-tailwindcss": "^0.8.1",
-		"prisma": "^5.5.2",
+		"prisma": "^8.0.0-rc.33",
 		"tailwindcss": "^4.3.5",
 		"ts-node": "^10.9.1",
 		"typescript": "^5.1.6",
+		"typescript-eslint": "^8.72.2",
 		"vite": "^8.3.7",
 		"vitest": "^5.1.0"
 	},
