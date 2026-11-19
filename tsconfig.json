@@ -14,7 +14,7 @@
 		"isolatedModules": true,
 		"esModuleInterop": true,
 		"jsx": "react-jsx",
-		"moduleResolution": "Bundler",
+		"moduleResolution": "bundler",
 		"resolveJsonModule": true,
 		"skipLibCheck": true,
 		"target": "ES2022",
@@ -26,7 +26,8 @@
 		"paths": {
 			"~/*": ["./app/*"]
 		},
-		// Vite takes care of building everything.
-		"noEmit": true
+		// Vite takes care of building everything
+		"noEmit": true,
+		"module": "preserve"
 	}
 }
